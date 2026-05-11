@@ -241,4 +241,4 @@ When making a game with this kit, update the Credits panel with:
 
 ## License
 
-See LICENSE.txt
+See LICENSE (file)
