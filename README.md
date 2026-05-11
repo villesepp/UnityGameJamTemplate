@@ -74,6 +74,8 @@ Includes:
 - Quit button
 - Menu music
 
+<img width="1182" height="668" alt="mainmenu" src="https://github.com/user-attachments/assets/f5f8f45c-c4cd-46c0-bb0a-36090e68b1f1" />
+
 
 ### `02_Game`
 
@@ -94,6 +96,9 @@ Includes:
 - Objective manager
 
 This scene can also be tested directly thanks to the Bootstrapper.
+
+<img width="1181" height="662" alt="gameplay" src="https://github.com/user-attachments/assets/125a7a2e-72b5-4dea-8606-09341d668f23" />
+
 
 
 ## Folder Structure
@@ -186,8 +191,13 @@ Paused
 GameOver
 Victory
 
-
 `GameManager` exposes an `OnGameStateChanged` event so UI and gameplay systems can react when the state changes.
+
+<img width="1182" height="662" alt="paused" src="https://github.com/user-attachments/assets/75197a99-148a-4a62-ad65-5580d159398a" />
+
+<img width="1185" height="665" alt="settings" src="https://github.com/user-attachments/assets/e09539b5-cfa1-49a2-b61c-1545167f7a49" />
+
+
 
 
 ## Audio
