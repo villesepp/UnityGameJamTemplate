@@ -11,9 +11,18 @@ The kit includes a ready-made scene flow, player controller, UI states, audio, s
 
 Built with Unity 6.4.
 
+## Development Note
+
+This starter kit was developed with assistance from generative AI for planning, code iteration, debugging, and documentation. The project was manually implemented, tested, organized, and published in Unity.
+
 Recommended template:
 
 - Universal 2D
+
+
+## Starting
+
+Open `Assets/_TopDownStarter/Scenes/00_Boot.unity` and press Play to start the template. The normal startup scene is `00_Boot`. The `02_Game` scene can also be played directly because it includes a Bootstrapper.
 
 
 ## Features
