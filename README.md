@@ -195,10 +195,6 @@ Victory
 
 <img width="1182" height="662" alt="paused" src="https://github.com/user-attachments/assets/75197a99-148a-4a62-ad65-5580d159398a" />
 
-<img width="1185" height="665" alt="settings" src="https://github.com/user-attachments/assets/e09539b5-cfa1-49a2-b61c-1545167f7a49" />
-
-
-
 
 ## Audio
 
@@ -229,6 +225,8 @@ The Settings menu currently supports:
 * UI Volume
 
 SFX and UI volume sliders can play sample sounds when released.
+
+<img width="1185" height="665" alt="settings" src="https://github.com/user-attachments/assets/e09539b5-cfa1-49a2-b61c-1545167f7a49" />
 
 
 ## Credits
