@@ -1,3 +1,6 @@
 All provided art is CC0.
 
-The license is CC0: https://creativecommons.org/publicdomain/zero/1.0/
+Pixel art sprites by surt
+Downloaded from https://opengameart.org/content/simple-broad-purpose-tileset
+
+CC0 license: https://creativecommons.org/publicdomain/zero/1.0/
