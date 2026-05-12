@@ -83,7 +83,8 @@ Includes:
 - Quit button
 - Menu music
 
-<img width="1182" height="668" alt="mainmenu" src="https://github.com/user-attachments/assets/f5f8f45c-c4cd-46c0-bb0a-36090e68b1f1" />
+<img width="1200" height="860" alt="ghmenu" src="https://github.com/user-attachments/assets/bbf25058-f78a-43f9-b653-a1d52c6fca19" />
+
 
 
 ### `02_Game`
@@ -106,23 +107,22 @@ Includes:
 
 This scene can also be tested directly thanks to the Bootstrapper.
 
-<img width="1181" height="662" alt="gameplay" src="https://github.com/user-attachments/assets/125a7a2e-72b5-4dea-8606-09341d668f23" />
+<img width="1181" height="662" alt="hero-gameplay" src="https://github.com/user-attachments/assets/2d4e37a6-f6b4-4670-806c-182680df02aa" />
 
 
 
 ## Folder Structure
 
-text
-Assets/
-  _TopDownStarter/
-    Art/
-    Audio/
-    Materials/
-    Prefabs/
-    Scenes/
-    Scripts/
-    ScriptableObjects/
-    Settings/
+* Assets/
+*   _TopDownStarter/
+*     Art/
+*     Audio/
+*     Materials/
+*     Prefabs/
+*     Scenes/
+*     Scripts/
+*     ScriptableObjects/
+*     Settings/
 	
 
 ## Controls
@@ -202,7 +202,7 @@ Victory
 
 `GameManager` exposes an `OnGameStateChanged` event so UI and gameplay systems can react when the state changes.
 
-<img width="1182" height="662" alt="paused" src="https://github.com/user-attachments/assets/75197a99-148a-4a62-ad65-5580d159398a" />
+<img width="1200" height="653" alt="ghpause" src="https://github.com/user-attachments/assets/08ef4847-1de2-464d-bd95-6dd92f246251" />
 
 
 ## Audio
@@ -235,12 +235,12 @@ The Settings menu currently supports:
 
 SFX and UI volume sliders can play sample sounds when released.
 
-<img width="1185" height="665" alt="settings" src="https://github.com/user-attachments/assets/e09539b5-cfa1-49a2-b61c-1545167f7a49" />
+<img width="1200" height="660" alt="ghsettings" src="https://github.com/user-attachments/assets/a4c5bb0e-35fc-4699-86eb-2d5fdc1779d5" />
 
 
 ## Credits
 
-This starter kit may include placeholder graphics and CC0 audio.
+This starter kit includes CC0 audio and graphics.
 
 When making a game with this kit, update the Credits panel with:
 
