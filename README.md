@@ -6,6 +6,9 @@ A lightweight 2D top-down starter kit for Unity 6, designed to help game jam pro
 
 The kit includes a ready-made scene flow, player controller, UI states, audio, settings, pickups, hazards, enemies, timer, scoring, and common gameplay systems.
 
+<img width="854" height="480" alt="templatedemo" src="https://github.com/user-attachments/assets/e5669270-bade-493c-985d-f2daa9325897" />
+
+
 
 ## Unity Version
 
