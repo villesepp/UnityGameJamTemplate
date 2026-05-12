@@ -1093,7 +1093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 303.75, y: -808.31995}
+  m_AnchoredPosition: {x: 697.9974, y: -863.515}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420921672
@@ -3061,7 +3061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 303.75, y: -249.60997}
+  m_AnchoredPosition: {x: 697.9974, y: -194.41501}
   m_SizeDelta: {x: 194.73, y: 55.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191730568
@@ -3772,8 +3772,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 303.75, y: -517.93}
-  m_SizeDelta: {x: 360.91, y: 440.78}
+  m_AnchoredPosition: {x: 697.9974, y: -517.93}
+  m_SizeDelta: {x: 360.91, y: 551.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446911486
 MonoBehaviour:
@@ -3795,9 +3795,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Created by\n[Your Name Here]\n\nTools\nUnity 6.4\n\nMusic\nby Chasersgaming\nLicensed
-    under CC0\n\nSound FX\nby OwlishMedia\nLicensed under CC0\n\nBased on Game Jam
-    Starter Kit\nby Ville Sepp\xE4nen"
+  m_text: "Created by\n[Your Name Here]\n\nTools\nUnity 6.4\n\nPixel Art Sprites\nby
+    surt\nLicensed under CC0\n\nMusic\nby Chasersgaming\nLicensed under CC0\n\nSound
+    FX\nby OwlishMedia\nLicensed under CC0\n\nBased on Game Jam Starter Kit\nby Ville
+    Sepp\xE4nen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
