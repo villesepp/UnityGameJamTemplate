@@ -107,6 +107,8 @@ Includes:
 - Keyboard, mouse, and gamepad skip support
 - Automatic transition to the main menu
 
+<img width="1340" height="878" alt="image" src="https://github.com/user-attachments/assets/2f274366-7b38-46e6-a759-73a00d466109" />
+
 
 ### `01_MainMenu`
 
@@ -122,7 +124,8 @@ Includes:
 - Quit button
 - Menu music
 
-<img width="1200" height="860" alt="ghmenu" src="https://github.com/user-attachments/assets/bbf25058-f78a-43f9-b653-a1d52c6fca19" />
+<img width="1348" height="893" alt="image" src="https://github.com/user-attachments/assets/9032df35-fcf5-4ca8-b543-7e8ef8665e58" />
+
 
 
 
@@ -146,7 +149,8 @@ Includes:
 
 This scene can also be tested directly thanks to the Bootstrapper.
 
-<img width="1181" height="662" alt="hero-gameplay" src="https://github.com/user-attachments/assets/2d4e37a6-f6b4-4670-806c-182680df02aa" />
+<img width="1349" height="885" alt="image" src="https://github.com/user-attachments/assets/c87a69e3-fa76-4b62-8542-0e8672533361" />
+
 
 
 ### `03_Tutorial`
@@ -161,6 +165,7 @@ Includes:
 - Goal overlay
 - Victory trigger on tutorial completion
 
+<img width="1344" height="878" alt="image" src="https://github.com/user-attachments/assets/1f799195-1716-4c63-a806-ae65f5f99434" />
 
 
 ## Folder Structure
