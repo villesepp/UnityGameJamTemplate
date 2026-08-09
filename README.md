@@ -6,8 +6,9 @@ A lightweight 2D top-down starter kit for Unity 6, designed to help game jam pro
 
 The kit includes many common features. Scroll down for the full list.
 
-<img width="854" height="480" alt="templatedemo" src="https://github.com/user-attachments/assets/e5669270-bade-493c-985d-f2daa9325897" />
+<!-- <img width="854" height="480" alt="templatedemo" src="https://github.com/user-attachments/assets/e5669270-bade-493c-985d-f2daa9325897" /> -->
 
+<img width="1280" height="720" alt="unitytemplate020-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/0de42d15-5833-47a7-a221-88f096941c7c" />
 
 
 ## Unity Version
