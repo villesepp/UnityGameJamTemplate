@@ -118,11 +118,12 @@ Includes:
 
 - Start Game button
 - Tutorial button
-- Instructions panel
+- "How To Play" panel
 - Settings menu
 - Credits popup
 - Quit button
 - Menu music
+- Discord and "Our Website" buttons to open a custom URL in a browser
 
 <img width="1348" height="893" alt="image" src="https://github.com/user-attachments/assets/9032df35-fcf5-4ca8-b543-7e8ef8665e58" />
 
@@ -284,16 +285,14 @@ Tutorial triggers use `TutorialTrigger` and only activate for their assigned ste
 
 The starter kit uses these game states:
 
-Booting
-MainMenu
-Playing
-Paused
-GameOver
-Victory
+* Booting
+* MainMenu
+* Playing
+* Paused
+* GameOver
+* Victory
 
 `GameManager` exposes an `OnGameStateChanged` event so UI and gameplay systems can react when the state changes.
-
-<img width="1200" height="653" alt="ghpause" src="https://github.com/user-attachments/assets/08ef4847-1de2-464d-bd95-6dd92f246251" />
 
 
 ## Audio
@@ -317,6 +316,13 @@ Scene music is assigned through the `SceneMusic` component.
 Volume settings can be reset through `AudioManager.ResetVolumeSettings()`.
 
 
+## How to Play 
+
+The screen can be customized to help new players get started quickly.
+
+<img width="1341" height="875" alt="image" src="https://github.com/user-attachments/assets/c58c43cd-9e09-47d5-9740-cef22a71c48f" />
+
+
 ## Settings
 
 The Settings menu currently supports:
@@ -328,7 +334,8 @@ The Settings menu currently supports:
 
 SFX and UI volume sliders can play sample sounds when released.
 
-<img width="1200" height="660" alt="ghsettings" src="https://github.com/user-attachments/assets/a4c5bb0e-35fc-4699-86eb-2d5fdc1779d5" />
+<img width="1332" height="867" alt="image" src="https://github.com/user-attachments/assets/1ca1118f-45b2-4414-a335-15592d2835fc" />
+
 
 
 ## Credits
@@ -343,10 +350,6 @@ When making a game with this kit, update the Credits panel with:
 * Asset credits
 * Tool credits
 
-
-## Known Limitations
-
-* The kit is designed for small 2D top-down games and game jams.
 
 
 ## License
