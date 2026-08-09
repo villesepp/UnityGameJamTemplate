@@ -32,6 +32,8 @@ The `02_Game` and `03_Tutorial` scenes can also be played directly because they 
 
 ## Features
 
+Scene flow and structure:
+
 - Boot scene and persistent core managers
 - Splash screen with fade timing and skip input
 - Direct scene testing with Bootstrapper
@@ -40,14 +42,14 @@ The `02_Game` and `03_Tutorial` scenes can also be played directly because they 
 - Instructions panel
 - Settings menu
 - Credits popup
+- Scene loading and scene transition
+- Tutorial scene
+
+Gameplay systems:
+
 - Pause menu
 - Game Over screen
 - Victory screen
-- Scene loading and scene transition
-- Tutorial scene
-- Step-based tutorial system
-- Tutorial goal overlay
-- Tutorial trigger volumes
 - New Input System top-down player movement
 - Smooth camera follow
 - Health system
@@ -62,11 +64,23 @@ The `02_Game` and `03_Tutorial` scenes can also be played directly because they 
 - Damage zones
 - Collect-all objective
 - Simple chaser enemy
+
+Tutorial systems:
+
+- Step-based tutorial system
+- Tutorial goal overlay
+- Tutorial trigger volumes
+
+Audio and settings:
+
 - Audio manager
 - Scene music
 - SFX and UI sound support
 - Saved audio volume settings
 - Resettable audio volume settings
+
+UI helpers:
+
 - UI hover scale, shine, pulse, rotation, and scrolling background helpers
 - Open URL button helper
 
