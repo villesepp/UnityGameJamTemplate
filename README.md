@@ -1,8 +1,8 @@
 Version: 0.2.0
 
-# Unity 6 Top-Down Game Jam Starter Kit
+# Unity 6 Top-Down Game Starter Kit
 
-A lightweight 2D top-down starter kit for Unity 6, designed to help game jam projects get started faster.
+A lightweight 2D top-down starter kit for Unity 6, designed to help game projects get started faster.
 
 The kit includes many common features. Scroll down for the full list.
 
