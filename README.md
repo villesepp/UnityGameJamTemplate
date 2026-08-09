@@ -1,10 +1,10 @@
-Version: 0.1.0
+Version: 0.2.0
 
 # Unity 6 Top-Down Game Jam Starter Kit
 
 A lightweight 2D top-down starter kit for Unity 6, designed to help game jam projects get started faster.
 
-The kit includes a ready-made scene flow, player controller, UI states, audio, settings, pickups, hazards, enemies, timer, scoring, and common gameplay systems.
+The kit includes many common features. Scroll down for the full list.
 
 <img width="854" height="480" alt="templatedemo" src="https://github.com/user-attachments/assets/e5669270-bade-493c-985d-f2daa9325897" />
 
@@ -17,10 +17,6 @@ Built with Unity 6.4 / Unity Editor 6000.4.6f1.
 ## Development Note
 
 This starter kit was developed with assistance from generative AI for planning, code iteration, debugging, and documentation. The project was manually implemented, tested, organized, and published in Unity.
-
-Recommended template:
-
-- Universal 2D
 
 
 ## Starting
