@@ -1,6 +1,6 @@
 Version: 0.2.0
 
-# Unity 6 Game Starter Kit
+# Unity 6 Game Template
 
 A lightweight 2D starter kit for Unity 6, designed to help game projects get started faster.
 
