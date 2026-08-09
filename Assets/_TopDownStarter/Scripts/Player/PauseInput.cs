@@ -26,6 +26,9 @@ public class PauseInput : MonoBehaviour
 
     private void OnPausePerformed(InputAction.CallbackContext context)
     {
+        if (TutorialManager.IsTutorialPanelOpen)
+            return;
+
         if (GameManager.Instance == null)
             return;
 
@@ -37,5 +40,5 @@ public class PauseInput : MonoBehaviour
         {
             GameManager.Instance.ResumeGame();
         }
-    }
+}
 }

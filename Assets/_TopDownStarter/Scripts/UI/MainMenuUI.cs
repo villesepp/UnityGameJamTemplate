@@ -6,6 +6,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject instructionsPanel;
 
     private void Start()
     {
@@ -26,6 +27,19 @@ public class MainMenuUI : MonoBehaviour
         }
     }
 
+    public void OnTutorialClicked()
+    {
+        Debug.Log("Tutorial button clicked.");
+
+        if (SceneLoader.Instance != null)
+        {
+            SceneLoader.Instance.LoadTutorial();
+        }
+        else
+        {
+            Debug.LogWarning("SceneLoader.Instance is missing.");
+        }
+    }
     public void OnSettingsClicked()
     {
         ShowSettings();
@@ -41,6 +55,7 @@ public class MainMenuUI : MonoBehaviour
         ShowMainMenu();
     }
 
+
     public void OnCreditsClicked()
     {
         ShowCredits();
@@ -50,6 +65,17 @@ public class MainMenuUI : MonoBehaviour
     {
         ShowMainMenu();
     }
+    
+    public void OnInstructionsClicked()
+    {
+        ShowInstructions();
+    }
+
+    public void OnInstructionsBackClicked()
+    {
+        ShowMainMenu();
+    }
+    
 
     public void OnQuitClicked()
     {
@@ -75,6 +101,9 @@ public class MainMenuUI : MonoBehaviour
 
         if (creditsPanel != null)
             creditsPanel.SetActive(false);
+
+        if (instructionsPanel != null)
+            instructionsPanel.SetActive(false);
     }
 
     private void ShowSettings()
@@ -99,5 +128,20 @@ public class MainMenuUI : MonoBehaviour
 
         if (creditsPanel != null)
             creditsPanel.SetActive(true);
+    }
+
+    private void ShowInstructions()
+    {
+        if (mainMenuPanel != null)
+            mainMenuPanel.SetActive(false);
+
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
+
+        if (creditsPanel != null)
+            creditsPanel.SetActive(false);
+
+        if (instructionsPanel != null)
+            instructionsPanel.SetActive(true);
     }
 }

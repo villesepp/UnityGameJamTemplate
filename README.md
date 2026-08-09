@@ -12,7 +12,7 @@ The kit includes a ready-made scene flow, player controller, UI states, audio, s
 
 ## Unity Version
 
-Built with Unity 6.4.
+Built with Unity 6.4 / Unity Editor 6000.4.6f1.
 
 ## Development Note
 
@@ -25,24 +25,34 @@ Recommended template:
 
 ## Starting
 
-Open `Assets/_TopDownStarter/Scenes/00_Boot.unity` and press Play to start the template. The normal startup scene is `00_Boot`. The `02_Game` scene can also be played directly because it includes a Bootstrapper.
+Open `Assets/_TopDownStarter/Scenes/00_Boot.unity` and press Play to start the template. The boot scene creates the persistent core managers, then loads `00_Splash`, which fades into `01_MainMenu`.
+
+The `02_Game` and `03_Tutorial` scenes can also be played directly because they include a Bootstrapper.
 
 
 ## Features
 
 - Boot scene and persistent core managers
+- Splash screen with fade timing and skip input
 - Direct scene testing with Bootstrapper
 - Main menu
+- Tutorial button
+- Instructions panel
 - Settings menu
 - Credits popup
 - Pause menu
 - Game Over screen
 - Victory screen
 - Scene loading and scene transition
+- Tutorial scene
+- Step-based tutorial system
+- Tutorial goal overlay
+- Tutorial trigger volumes
 - New Input System top-down player movement
 - Smooth camera follow
 - Health system
 - Health display
+- World-space health bars
 - Score system
 - Score display
 - Countdown timer
@@ -56,6 +66,9 @@ Open `Assets/_TopDownStarter/Scenes/00_Boot.unity` and press Play to start the t
 - Scene music
 - SFX and UI sound support
 - Saved audio volume settings
+- Resettable audio volume settings
+- UI hover scale, shine, pulse, rotation, and scrolling background helpers
+- Open URL button helper
 
 
 ## Scene Overview
@@ -74,6 +87,17 @@ Creates the persistent `Core` object, which contains core systems such as:
 In a normal build, the game should start from this scene.
 
 
+### `00_Splash`
+
+Splash/loading intro scene.
+
+Includes:
+
+- Fade in, hold, and fade out timing
+- Keyboard, mouse, and gamepad skip support
+- Automatic transition to the main menu
+
+
 ### `01_MainMenu`
 
 Main menu scene.
@@ -81,6 +105,8 @@ Main menu scene.
 Includes:
 
 - Start Game button
+- Tutorial button
+- Instructions panel
 - Settings menu
 - Credits popup
 - Quit button
@@ -113,19 +139,34 @@ This scene can also be tested directly thanks to the Bootstrapper.
 <img width="1181" height="662" alt="hero-gameplay" src="https://github.com/user-attachments/assets/2d4e37a6-f6b4-4670-806c-182680df02aa" />
 
 
+### `03_Tutorial`
+
+Guided tutorial gameplay scene.
+
+Includes:
+
+- Tutorial steps with title, body text, optional image, and goal text
+- Optional pause-on-step-start behavior
+- Tutorial trigger volumes
+- Goal overlay
+- Victory trigger on tutorial completion
+
+
 
 ## Folder Structure
 
-* Assets/
-*   _TopDownStarter/
-*     Art/
-*     Audio/
-*     Materials/
-*     Prefabs/
-*     Scenes/
-*     Scripts/
-*     ScriptableObjects/
-*     Settings/
+```text
+Assets/
+  _TopDownStarter/
+    Art/
+    Audio/
+    Materials/
+    Prefabs/
+    Scenes/
+    Scripts/
+    ScriptableObjects/
+    Settings/
+```
 	
 
 ## Controls
@@ -134,11 +175,17 @@ Keyboard:
 
 * Move: WASD / Arrow Keys
 * Pause: Escape / P
+* Splash skip: Any key
 
 Gamepad:
 
 * Move: Left Stick
 * Pause: Start
+* Splash skip: South button
+
+Mouse:
+
+* Splash skip: Left button
 
 Controls are defined in:
 
@@ -158,6 +205,15 @@ Assets/_TopDownStarter/Settings/TopDownControls.inputactions
 
 
 ## Common Prefabs
+
+### Core
+
+Located in:
+
+Assets/_TopDownStarter/Prefabs/Core/
+
+
+Creates the persistent core systems used by the scene flow.
 
 ### Player
 
@@ -190,6 +246,23 @@ Damages the player on contact. Can be configured to damage once or repeatedly.
 ### ChaserEnemy
 
 Moves toward the player and damages the player on contact.
+
+
+## Tutorial
+
+The tutorial system is driven by `TutorialManager`.
+
+It supports:
+
+* Ordered tutorial steps
+* Full-screen tutorial panels
+* Optional tutorial images
+* Gameplay goal overlay text
+* Optional pause when a step starts
+* Step-specific trigger volumes
+* Victory when the tutorial is completed
+
+Tutorial triggers use `TutorialTrigger` and only activate for their assigned step index.
 
 
 ## Game States
@@ -225,6 +298,8 @@ It supports:
 Audio settings are saved with `PlayerPrefs`.
 
 Scene music is assigned through the `SceneMusic` component.
+
+Volume settings can be reset through `AudioManager.ResetVolumeSettings()`.
 
 
 ## Settings

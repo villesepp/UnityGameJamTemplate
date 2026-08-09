@@ -8,8 +8,10 @@ public class SceneLoader : MonoBehaviour
 
     [Header("Scene Names")]
     [SerializeField] private string bootSceneName = "00_Boot";
+    [SerializeField] private string splashSceneName = "00_Splash";
     [SerializeField] private string mainMenuSceneName = "01_MainMenu";
     [SerializeField] private string gameSceneName = "02_Game";
+    [SerializeField] private string tutorialSceneName = "03_Tutorial";
 
     private bool isLoading;
 
@@ -29,8 +31,13 @@ public class SceneLoader : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == bootSceneName)
         {
-            LoadMainMenu();
+            LoadSplash();
         }
+    }
+
+    public void LoadSplash()
+    {
+        LoadScene(splashSceneName, GameState.MainMenu);
     }
 
     public void LoadMainMenu()
@@ -43,9 +50,16 @@ public class SceneLoader : MonoBehaviour
         LoadScene(gameSceneName, GameState.Playing);
     }
 
+    public void LoadTutorial()
+{
+    LoadScene(tutorialSceneName, GameState.Playing);
+}
+
     public void RestartGame()
     {
-        LoadGame();
+        //LoadGame();
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        LoadScene(currentSceneName, GameState.Playing);
     }
 
     public void QuitGame()
